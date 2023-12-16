@@ -1,0 +1,25 @@
+{
+  "name": "marikai",
+  "version": "1.0.0",
+  "description": "This is a MarikAI bot",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon src/app.ts",
+    "start": "npx nodemon src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kujo205",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.29.1",
+    "telegraf": "^4.15.3",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  }
+}
