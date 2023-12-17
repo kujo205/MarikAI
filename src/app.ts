@@ -9,11 +9,13 @@ bot.start((ctx) => telegramService.onBotStart(ctx))
 
 
 bot.command('stas',async (ctx)=>{
+    console.log(ctx.chat.id)
     ctx.reply('stasik hueta')
 })
 
 bot.on(message('text'),async (ctx)=>{
     ctx.reply('HUETA')
+    console.log(ctx)
 })
 
 
