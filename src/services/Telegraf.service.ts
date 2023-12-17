@@ -7,7 +7,7 @@ class TelegrafService {
 
     onEmojiCommand(ctx:Context) {
         const username=ctx.from?.username
-        ctx.reply(`${username} - ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()}`)
+        ctx.reply(`${username} трахнуі ${getRandomEmoji()}, відсосів у ${getRandomEmoji()} і отримав пізди від ${getRandomEmoji()}`)
     }
 
 }
