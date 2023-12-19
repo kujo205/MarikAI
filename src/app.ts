@@ -19,11 +19,14 @@ bot.on(message('text'),async (ctx)=>{
 })
 
 
+if(process.env.ENVIRONENT==='production'){
+    bot.launch({webhook: { domain: process.env.WEBHOOK_DOMAIN as string, port: 4000 }})
+}else {
+    bot.launch()
+}
 
 
 
-bot.launch()
 process.once('SIGINT', () => bot.stop('SIGINT'))
 process.once('SIGTERM', () => bot.stop('SIGTERM'))
-
 
